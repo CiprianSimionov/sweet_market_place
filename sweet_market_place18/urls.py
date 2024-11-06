@@ -26,5 +26,5 @@ urlpatterns = [
     path('accounts/', include('account.urls')),
 ]
 
-if settings.DEBUG: #verificam daca proiectul ruleaza in mod debug
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) #adaugam urls pentru fisierele media
+if settings.DEBUG: #check if project runs in debug mode
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) #add urls for media files
