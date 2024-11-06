@@ -1,12 +1,12 @@
 
 
 .navbar{
-    background-color: #FFA500 !important;
+    background-color: #D2691E !important;
 }
 
 .logout-button{
-    background-color: #FFA500;
-    border:#FFA500;
+    background-color: #D2691E;
+    border:#D2691E;
 }
 
 .heading-title {
@@ -31,27 +31,27 @@
 
 .btn-custom {
     font-weight: bold;
-    background-color: #FFA500;
+    background-color: #D2691E;
     padding: 10px 40px;
-    border: 2px solid #FFA500;
+    border: 2px solid #D2691E;
     color: #FFFFFF;
 }
 
 .btn-custom:hover {
     background-color: #FFFFFF;
-    color: #FFA500;
+    color: #D2691E;
 }
 
 .btn-custom-reverse {
     font-weight: bold;
     background-color: #FFFFFF;
     padding: 10px 40px;
-    border: 2px solid #FFA500;
-    color: #FFA500;
+    border: 2px solid #D2691E;
+    color: #D2691E;
 }
 
 .btn-custom-reverse:hover {
-    background-color: #FFA500;
+    background-color: #D2691E;
     color: #FFFFFF;
 }
 
