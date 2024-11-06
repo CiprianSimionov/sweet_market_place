@@ -1,35 +1,35 @@
-# SWEET_MARKET_PLACE18
+# SWEET_MARKET_PLACE
 
-**Sweet_Market_Place18** este un magazin online specializat in produse de cofetarie, dezvoltat cu ajutorul limbajului de programare backend Python si s-a implementat frameworkul web Django, s-a utilizat baza de date SqlLite3
+**Sweet_Market_Place** It is an online store specialized in pastry products, developed with Python backend programming language, Django web framework was implemented and SqlLite3 database was used
 
-## <span style="color:orange;">1. Screenshot Sweet_Market_Place18</span>
+## <span style="color:#D2691E;">1. Screenshot Sweet_Market_Place</span>
 ![Alt Text](photo_app/sweetmarketplace.jpg)
 
-## <span style="color:orange;">2. Features Sweet_Market_Place18</span>
-* interfata este userfriendly(compatibila pe diferite deviceuri si dimensiuni)
-* meniu de navigare - simplu si intuitiv ce ii permite utilizatorului sa acceseze diferite sectiuni ale aplicatiei
-* homepage - personalizata, ofera utilizatorului o experienta placuta si imagini despre magazinul online
-* gestionare produse - utilizatorii pot naviga pe pagina de produse si ulterior pe pagina produsului, pentru a vedea detalii
-* Login/Logout - Register - utilizatorii au optiunea de a se inregistra, autentifica si ulterior pot adauga produse in cos
+## <span style="color:#D2691E;">2. Features Sweet_Market_Place</span>
+* The interface is user-friendly (compatible on different devices and sizes)
+* navigation menu - simple and intuitive that allows the user to access different sections of the application
+* homepage - personalized, offers the user a pleasant experience and images about the online store
+* product management - users can navigate to products page and subsequently to page product for more details
+* Login/Logout - Register - users have the option to register, login and later add products to cart
 
 
-## <span style="color:orange;"> 3. Tehnologii si tooluri utilizate</span>
-* Python - limbaj de programare
+## <span style="color:#D2691E;"> 3. Tools and technologies used</span>
+* Python - programming language
 * Django - framework web
 * Pycharm - IDE
-* SqlLiteStudio si libraria SqlLite3 - baze de date 
-* HTML,CSS - creare pagini web si stilizarea acestora
+* SqlLiteStudio and SqlLite3 library - database 
+* HTML, CSS - creating web pages and styling
 
-## <span style="color:orange;">4. Instructiuni de instalare</span>
-* Cloneaza acest repository local 
-link repository github
-* Creaza un virtual environment
+## <span style="color:#D2691E;">4. Installation instructions</span>
+* Clone this local repository:
+https://github.com/CiprianSimionov/sweet_market_place.git
+* Create a virtual environment:
 `python -m venv venv`
-* Instaleaza local dependintele proiectului
+* Install locally the project dependencies:
 `pip install -r requirements.txt`
 
-## <span style="color:orange;">5. Utilizarea aplicatiei - se va face pornind serverul de dezvoltare folosind comanda:</span>
+## <span style="color:#D2691E;">5. How to use the application - starting the server using the command:</span>
 `python manage.py runserver`
 
-Acceseaza aplicatia intr-un browser folosind adresa: http://127.0.0.1:8000/
+* Access the application in a browser using the following url: http://127.0.0.1:8000/
 
