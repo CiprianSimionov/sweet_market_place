@@ -2,15 +2,15 @@
 <html>
 <head>
 
-    <title>Încărcați un produs</title>
+    <title>Upload Product</title>
 
 </head>
 <body>
-    <h1>Încărcați un produs</h1>
+    <h1>Upload Product</h1>
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
-        <input type="submit" value="Încărcați produsul">
+        <input type="submit" value="Upload product">
     </form>
 </body>
 </html>
