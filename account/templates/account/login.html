@@ -3,7 +3,7 @@
 <div class="container spaced-top-5">
   <div class="row">
     <div class="col">
-      <h2>Autentificare</h2>
+      <h2>Login</h2>
       <form  method="POST"  action="{% url 'account:login' %}" name="login" id="login">
         {% csrf_token %}
         <div class="form-group">
@@ -19,8 +19,8 @@
             {{ error }}
           </div>
         {% endif %}
-        <button type="submit" class="btn-custom spaced-top-2">Autentificare</button>
-        <p class="spaced-top-2">Nu ai cont?  <a href="{% url 'account:register' %}" target="_blank">Inregistreaza-te</a></p>
+        <button type="submit" class="btn-custom spaced-top-2">Login</button>
+        <p class="spaced-top-2">No account?  <a href="{% url 'account:register' %}" target="_blank">Register</a></p>
       </form>
       {% if post_data %}
       <p>Datele formularului:</p>
