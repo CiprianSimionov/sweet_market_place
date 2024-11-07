@@ -10,7 +10,7 @@ from django.views.generic import ListView
 def home_view(request):
     return render(request, 'sweet_market_place18_app/home.html')
 
-#este o functie cu ajutorul careia putem sa incarcam produse folosind un sablon, upload_product
+#A function which helps upload products using a template, upload_product
 def product_upload(request):
     if request.method == "POST":
         form = ProductForm(request.POST, request.FILES)
@@ -23,7 +23,7 @@ def product_upload(request):
         "form": form
     })
 
-class ProductListView(ListView): #cream si afisam o lista de produse/obiecte
+class ProductListView(ListView): #create and display a list of products/objects
     model = Product
     template_name = 'sweet_market_place18_app/products.html'
 
