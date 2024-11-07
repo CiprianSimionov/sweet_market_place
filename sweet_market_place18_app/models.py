@@ -1,9 +1,9 @@
 from django.db import models
 
 # Create your models here.
-#vom defini structura bazei de date
-#vom instala libraria Pillow folosind comanda python -m pip install Pillow
-#este pentru a manipula si prelucra imaginile. Poate fi folosita pentru a salva imagini in diferite formate(png,jpg)
+#Define database
+#install Pillow library using command python -m pip install Pillow
+#for manipulating images. Can be used to save images in different formats(png,jpg)
 
 class Product(models.Model):
     name = models.CharField(max_length=100)

@@ -1,4 +1,4 @@
-#in cadrul acestui fisier definim rutele aplicatiei noastre sweet_market_place18
+#here we define roots for the application: sweet_market_place18
 
 from django.urls import path
 from sweet_market_place18_app.views import home_view, product_upload, ProductListView, product_details
