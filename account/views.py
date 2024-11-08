@@ -11,17 +11,22 @@ class LoginView(AuthLoginView):
 class LogoutView(AuthLogoutView):
     template_name = 'account/logout.html'
 
+
 def register(request):
-    if request.method == 'GET':
-        form = RegisterForm()
-        return render(request, 'account/register.html', context={'form': form})
-    elif request.method == 'POST':
+    if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
-            form.save()
+            user = form.save()  # save user
             username = form.cleaned_data.get('username')
             password = form.cleaned_data.get('password1')
-            user = authenticate(username, password)
-            if user:
+            user = authenticate(username=username, password=password)
+            if user is not None:
                 login(request, user)
-            return redirect('/')
+                return redirect('/')
+            else:
+                # if login fails
+                return render(request, 'account/register.html', {'form': form, 'error': 'Login failed.'})
+    else:
+        form = RegisterForm()  #creates new empty forms instance
+
+    return render(request, 'account/register.html', {'form': form})
